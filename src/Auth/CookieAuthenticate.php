@@ -20,12 +20,12 @@ class CookieAuthenticate extends BaseAuthenticate
     public function __construct(ComponentRegistry $registry, array $config = [])
     {
         $this->_registry = $registry;
-        $this->config([
+        $this->setConfig([
             'cookie' => [
                 'name' => 'CookieAuth'
             ]
         ]);
-        $this->config($config);
+        $this->setConfig($config);
     }
 
     /**
